@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="imgs/logo.png" type="image/x-icon">
+    <title>GD Academias | Supere seus limites</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"/>
+    <script>
+        tailwind.config = {
+            theme:{
+                extend:{
+                    colors:{
+                        blackslate: "oklch(13% 0.028 261.692)",
+                        yelloww: "#facc15",
+                        blackwhite: "#111111",
+                        blackgray: "#191919"
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-black text-white">
+    <header class="fixed border-b border-gray-700 z-20 px-12 py-5 md:px-12 md:py-3 xl:py-6 left-0 right-0 w-full bg-black/90 backdrop-blur-sm">
+        <div class="max-w-7xl mx-auto flex justify-between items-center ">
+            <div class="flex items-center gap-2">
+                <span class="text-yelloww block italic font-extrabold text-[.9em] md:text-[1.1em] xl:text-[1.3em] border-[3px] rounded-full p-[6px] border-yelloww">GD</span>
+                <h1 class="font-semibold text-[1.1em] md:text-[1.3em]"><span class="text-yelloww block italic leading-none">GD</span> <span class="text-base text-gray-300">Academias</span></h1>
+            </div>
+            <div>
+                <nav id="menu" class="flex items-center gap-12">
+                    <button id="btn-mobile" class="hidden"><span id="simbol" class="material-symbols-outlined">menu</span></button>
+                    <ul id="itens" class="flex gap-3">
+                        <li class="link text-base xl:text-xl"><a href="#home">Home</a></li>
+                        <li class="link text-base xl:text-xl"><a href="#sobre">Sobre</a></li>
+                        <li class="link text-base xl:text-xl"><a href="#planos">Planos</a></li>
+                        <li class="link text-base xl:text-xl"><a href="#reserva">Reservas</a></li>
+                        <li class="matricula"><a class="btn bg-yelloww text-black ml-5 px-3 py-2 rounded-md font-semibold md:text-base xl:text-xl z-10" href="#planos">MATRICULE-SE</a></li>
+                    </ul>
+                    
+                </nav>
+            </div>
+        </div>
+    </header>
+    <!--HERO-->
+    <section id="home" class="reveal home relative h-screen mx-auto">
+        <img src="https://images.unsplash.com/photo-1625151936268-e1ffba534f20?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D" alt="Academia" id="imagem-slide" class="insert-0 absolute h-full w-full object-cover">
+        <div class="absolute inset-0 bg-gradient-to-r from-black via-black/70 to-transparent"></div>
+        <div class="h-full pt-20 relative z-10 flex flex-col items-center justify-center px-8 mx-auto">
+            <ul class="flex gap-2 font-semibold">
+                <li class="herocom text-[.9em]"><i class="text-yelloww bi bi-bullseye"></i> Foco</li>
+                <li class="herocom text-[.9em]"> <i class="text-yelloww bi bi-lightning-charge-fill"></i> Força</li>
+                <li class="herocom text-[.9em]"><i class="text-yelloww bi-shield-fill-check"></i> Determinação</li>
+            </ul>
+            <h1 class="font-extrabold py-3 text-center text-3xl md:text-4xl xl:text-6xl">
+                NÃO EXISTEM LIMITES. <span class="text-yelloww">SÓ DESAFIOS.</span>
+            </h1>
+            <p class="max-w-xl w-full md:max-w-3xl text-center text-gray-300 text-base md:text-xl pt-2">
+                Transforme sua rotina, fortaleça sua mente e descubra a sua melhor versão. Sua evolução começa na GD Academias.
+            </p>
+            <div class="flex flex-col md:flex-row gap-4 pt-10">
+                <a class="btn bg-yelloww text-center block text-black p-3 rounded-md font-semibold md:text-[1em] xl:text-[1.2em] hover:bg-yellow-500 w-full md:w-fit" href="#planos">Conheça os Planos</a>
+                <!--<a class="text-black w-fit p-3 rounded-md border border-white text-white font-semibold md:text-[1em]  hover:text-black hover:bg-white transition duration-700 ease-in-out w-full md:w-fit text-center" href="#sobre">Saiba Mais</a>-->
+            </div>
+        </div>
+    </section>
+
+    <!--QUEM SOMOS-->
+    <section id="sobre" class="px-8 py-24 bg-blackwhite border-b border-gray-800">
+        <div class="reveal grid grid-cols-1 md:grid-cols-2 max-w-7xl mx-auto gap-12 items-center">
+            <div class="imgsobre relative">
+                <img src="https://images.unsplash.com/photo-1778828494354-9b717d36dc99?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D" alt="" class="rounded-lg h-[450px] object-cover">
+                <button class="next">&#X1F44B;</button>
+                <div class="absolute bottom-5 left-4">
+                    <span class="block tracking-[4px] text-yelloww font-extrabold text-sm">GD EXPERIENCE</span>
+                    <span class="text-2xl font-extrabold">SUPERE SEUS LIMITES</span>
+                </div>
+            </div>
+            <div>
+                <span class="text-yelloww font-semibold text-base xl:text-xl py-8">
+                    QUEM SOMOS
+                </span>
+                <h2 class="font-extrabold text-2xl md:text-3xl lg:text-4xl xl:text-5xl py-5">
+                    MUITO MAIS QUE <span class="text-yelloww">UMA ACADEMIA</span>
+                </h2>
+                <P class="pb-5 text-base md:text-[1.2em] xl:text-[1.3em]">
+                    A GD Academias nasceu com o propósito de incentivar pessoas a alcançarem seus objetivos através da atividade física, disciplina e determinação.
+                </P>
+                <p class="pb-5 text-base md:text-[1.2em] xl:text-[1.3em]">
+                    Oferecemos um ambiente preparado para sua evolução, equipamentos de qualidade e um espaço onde cada treino representa uma nova conquista.
+                </p>
+                <div class="flex gap-5">
+                    <div class="sobrecard border border-gray-700 pl-3 pr-12 py-2 rounded-lg bg-blackgray">
+                        <div class="text-yelloww text-2xl pb-2"><i class="bi bi-stars"></i></div>
+                        <span class="block font-bold text-[1.05em]">ESTRUTURA</span>
+                        <span class="text-gray-300 text-sm md:text-base">Espaço Preparado Para Você</span>
+                    </div>
+                    <div class="sobrecard border border-gray-700 pl-3 pr-12 py-2 rounded-lg bg-blackgray">
+                        <div class="text-yelloww text-xl pb-2"><i class="bi bi-arrow-up-right"></i></div>
+                        <span class="block font-bold text-[1.05em]">EVOLUÇÃO</span>
+                        <span  class="text-gray-300 text-sm md:text-base">Cada treino conta</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--PLANOS-->
+    <section id="planos" class="px-8 py-24 border-b border-gray-800">
+        <div class="reveal max-w-7xl mx-auto">
+            <span class="block text-yelloww font-semibold text-center pb-2">
+                ESCOLHA SEU CAMINHO
+            </span>
+            <h2 class="font-extrabold text-4xl text-center md:text-3xl lg:text-4xl xl:text-5xl">
+                NOSSOS <span class="text-yelloww">PLANOS</span>
+            </h2>
+            <p class="text-center pt-3 pb-5 text-gray-300">
+                Encontre a opção ideal para começar sua evolução.
+            </p>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 pt-8">
+                <div class="plano bg-blackwhite px-8 py-6 rounded-xl border border-gray-800">
+                    <span class="text-gray-400 font-semibold">BÁSICO</span>
+                    <h3 class="font-extrabold text-xl md:text-2xl lg:text-3xl xl:text-4xl py-2">START</h3>
+                    <p class="text-gray-400 font-medium">Para quem está começando.</p>
+                    <div class="py-6 text-5xl md:text-6xl xl:text-7xl border-b border-gray-700 font-semibold"><span class="text-xl font-medium text-gray-400">R$</span>79<span class="text-xl font-medium text-gray-400">/mês</span></div>
+                    <ul class="planolist pt-5 space-y-3">
+                        <li><i class="bi bi-check-lg text-[1.3em]"></i> Acesso à musculação</li>
+                        <li><i class="bi bi-check-lg text-[1.3em]"></i> Equipamentos da academia</li>
+                        <li><i class="bi bi-check-lg text-[1.3em]"></i> Avaliação inicial</li>
+                    </ul>
+                    <button class="btn bg-yelloww text-black p-3 p-3 mt-8 rounded-md font-semibold text-[1.1em] w-full z-10"><a href="#reserva">ESCOLHER PLANO</a></button>
+                </div>
+
+                <div class="plano bg-blackwhite px-8 py-6 rounded-xl border-[3px] border-white relative">
+                    <div class="absolute -top-5 left-1/2 -translate-x-1/2 bg-yelloww text-black font-bold px-10 py-[3px] rounded-lg text-[.8em] text-center">MAIS POPULAR</div>
+                    <span class="text-yelloww font-semibold">INTERMEDIÁRIO</span>
+                    <h3 class="font-extrabold text-xl md:text-2xl lg:text-3xl xl:text-4xl py-2">EVOLUTION</h3>
+                    <p class="text-gray-400 font-medium">Para quem quer ir além.</p>
+                    <div class="py-6 text-5xl md:text-6xl xl:text-7xl border-b border-gray-700 font-semibold"><span class="text-xl font-medium text-gray-400">R$</span>109<span class="text-xl font-medium text-gray-400">/mês</span></div>
+                    <ul class="planolist pt-5 space-y-3">
+                        <li><i class="bi bi-check-lg text-[1.3em]"></i> Tudo do plano Start</li>
+                        <li><i class="bi bi-check-lg text-[1.3em]"></i> Acesso às aulas coletivas</li>
+                        <li><i class="bi bi-check-lg text-[1.3em]"></i>  Avaliação periódica</li>
+                        <li><i class="bi bi-check-lg text-[1.3em]"></i>   Mais flexibilidade de horários</li>
+                    </ul>
+                    <button class="btn bg-yelloww text-black p-3 p-3 mt-8 rounded-md font-semibold text-[1.1em] w-full z-10"><a href="#reserva">ESCOLHER PLANO</a></button>
+                </div>
+
+                 <div class="plano bg-blackwhite px-8 py-6 rounded-xl border border-gray-800">
+                    <span class="text-gray-400 font-semibold">PREMIUM</span>
+                    <h3 class="font-extrabold text-xl md:text-2xl lg:text-3xl xl:text-4xl py-2">ELITE</h3>
+                    <p class="text-gray-400 font-medium">Experiência completa.</p>
+                    <div class="py-6 text-5xl md:text-6xl xl:text-7xl border-b border-gray-700 font-semibold"><span class="text-xl font-medium text-gray-400">R$</span>149<span class="text-xl font-medium text-gray-400">/mês</span></div>
+                    <ul class="planolist pt-5 space-y-3">
+                        <li><i class="bi bi-check-lg text-[1.3em]"></i> Tudo do plano Evolution</li>
+                        <li><i class="bi bi-check-lg text-[1.3em]"></i> Acompanhamento personalizado</li>
+                        <li><i class="bi bi-check-lg text-[1.3em]"></i> Avaliações periódicas</li>
+                        <li><i class="bi bi-check-lg text-[1.3em]"></i> Benefícios exclusivos</li>
+                    </ul>
+                    <button class="btn bg-yelloww text-black p-3 p-3 mt-8 rounded-md font-semibold text-[1.1em] w-full z-10"><a href="#reserva">ESCOLHER PLANO</a></button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--RESERVAS-->
+    <section id="reserva" class="px-8 py-24 bg-blackwhite border-b border-gray-800">
+        <div class="reveal max-w-7xl mx-auto">
+            <div class="grid grid-cols-1 md:grid-cols-2 pt-9 gap-12 items-center">
+                <div>
+                    <span class="block text-yelloww xl:text-xl font-semibold pb-4">
+                    DÊ O PRIMEIRO PASSO
+                    </span>
+                    <h2 class="font-extrabold text-2xl md:text-3xl lg:text-4xl xl:text-5xl pb-5">
+                    SUA PRÓXIMA <span class="text-yelloww">CONQUISTA</span> COMEÇA AQUI.
+                    </h2>
+                    <p class="text-base md:text-[1.2em] xl:text-[1.3em]">
+                        Escolha seu plano, informe seus dados e solicite seu atendimento. Estamos prontos para receber você!
+                    </p>
+                    <div class="mt-9 space-y-5">
+                         <div class="space-y-6">
+
+                <div class="flex items-center gap-4">
+                    <div class="w-12 h-12 rounded-lg bg-yellow-400/10 flex items-center justify-center text-yellow-400 text-xl">
+                        <i class="bi bi-trophy"></i>
+                    </div>
+
+                    <div>
+                        <h3 class="font-bold text-white">Seu plano ideal</h3>
+                        <p class="text-gray-500 text-sm md:text-base">Encontre a modalidade perfeita para seus objetivos.</p>
+                    </div>
+                </div>
+
+                <div class="flex items-center gap-4">
+                    <div class="w-12 h-12 rounded-lg bg-yellow-400/10 flex items-center justify-center text-yellow-400 text-xl">
+                        <i class="bi bi-headset"></i>
+                    </div>
+                    <div>
+                        <h3 class="font-bold text-white">Atendimento personalizado</h3>
+                        <p class="text-gray-500 text-sm md:text-base">Nossa equipe está pronta para ajudar você.</p>
+                    </div>
+                </div>
+
+                <div class="flex items-center gap-4">
+                    <div class="w-12 h-12 rounded-lg bg-yellow-400/10 flex items-center justify-center text-yellow-400 text-xl">
+                        <i class="bi bi-lightning-charge"></i>
+                    </div>
+
+                    <div>
+                        <h3 class="font-bold text-white">Comece sua evolução</h3>
+                        <p class="text-gray-500 text-sm md:text-base">Dê o primeiro passo para uma nova rotina.</p>
+                    </div>
+                </div>
+
+            </div>
+                    </div>
+                </div>
+
+                <div class="form bg-black px-10 py-[55px] rounded-xl border border-gray-800">
+                    <h3 class="font-bold text-2xl md:text-3xl pb-2">FAÇA SUA RESERVA</h3>
+                    <p class="pb-4 text-gray-400">Preencha os dados para entrar em contato.</p>
+                    <form action="" method="post" class="space-y-4">
+                        <div>
+                            <label for="nome" class="block">Nome completo</label>
+                            <input class="bg-blackwhite border border-gray-800 focus:outline-none focus:border-yelloww" type="text" name="" id="" placeholder="Seu nome">
+                        </div>
+                        <div>
+                            <label for="tel" class="block">Telefone / WhatsApp</label>
+                            <input class="bg-blackwhite border border-gray-800 focus:outline-none focus:border-yelloww" type="tel" name="" id="" placeholder="(00)00000-0000">
+                        </div>
+                        <div>
+                            <label for="plano" class="block">Escolha seu plano</label>
+                            <select class="bg-blackwhite border border-gray-800 focus:outline-none focus:border-yelloww" name="" id="plano">
+                                <option value="" disabled selected>Escolha seu plano</option>
+                                <option value="">START-R$79,00</option>
+                                <option value="">EVOLUTION-R$109,00</option>
+                                <option value="">ELITE-R$149,00</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label for="date" class="block">Data desejada</label>
+                            <input class="bg-blackwhite border border-gray-800 focus:outline-none focus:border-yelloww" type="date" name="" id="">
+                        </div>
+                        <div>
+                            <button class="btn" id="formbtn" type="submit">SOLICITAR RESERVA <i class="bi bi-arrow-up-right"></i></button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-black pt-24 pb-6 px-12">
+        <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-9 md:gap-24 border-b border-gray-800 pb-8">
+            <div>
+                <div class="flex items-center gap-2 pb-2">
+                    <span class="text-yelloww block italic font-extrabold text-[1.1em] border-[3px] rounded-full p-[6px] border-yelloww">GD</span>
+                    <h1 class="font-semibold text-[1.3em]"><span class="text-yelloww block italic leading-none">GD</span> <span class="text-base text-gray-300">Academias</span></h1>
+                </div>
+                <p class="text-gray-400">Mais que uma academia, um espaço para construir sua melhor versão.</p>
+            </div>
+            <div>
+                <h2 class="text-xl font-bold pb-2">NAVEGAÇÂO</h2>
+                <ul class="space-y-2">
+                    <li class="linkfoter"><a href="#home">Home</a></li>
+                    <li class="linkfoter"><a href="#sobre">Sobre</a></li>
+                    <li class="linkfoter"><a href="#planos">Planos</a></li>
+                    <li class="linkfoter"><a href="#reserva">Reservas</a></li>
+                </ul>
+            </div>
+            <div>
+                <h2 class="text-xl font-bold pb-2">CONTATO</h2>
+                <siv class="space-y-2">
+                    <p>Entre em contato conosco.</p>
+                    <p class="text-yelloww font-bold text-[1.1em]">WhatsApp: (00) 00000-0000</p>
+                    <p>Instagram: @gdacademias</p>
+                </siv>
+            </div>
+        </div>
+        <div class="text-center py-5">
+             <p class="text-sm">
+                &copy; 2026 <span class="text-yelloww font-bold italic">GD</span> Academias.
+                Todos os direitos reservados.
+             </p>
+             <p class="text-sm mt-1">Desenvolvido por <a href="" class="text-gray-400 font-semibold">Gabriel Damião <i class="bi bi-code-slash"></i></a></p>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
